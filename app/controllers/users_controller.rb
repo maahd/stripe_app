@@ -6,7 +6,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      redirect_to 'http://localhost:3000/charges/new'
+      redirect_to '/charges/new'
     else
       render 'new'
     end
