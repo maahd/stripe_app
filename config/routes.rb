@@ -1,4 +1,5 @@
 StripeApp::Application.routes.draw do
+  get "static_pages/video"
   get "users/new"
   get "charges/new"
   # The priority is based upon order of creation: first created -> highest priority.
