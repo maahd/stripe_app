@@ -63,4 +63,5 @@ StripeApp::Application.routes.draw do
   match '/signup',  to: 'users#new',            via: 'get'
   match '/pay',  to: 'charges#new',            via: 'get'
   match '/',  to: 'users#new',            via: 'get'
+  match '/gdf80fsd0fs09f8',  to: 'static_pages#video',            via: 'get'
 end

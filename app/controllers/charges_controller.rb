@@ -19,7 +19,7 @@ class ChargesController < ApplicationController
 	    :currency    => 'usd'
 	  )
 
-	  redirect_to 'http://youtu.be/SqSWlGonv5g?list=UUFns-k9UgOhVRnKHdynzU2A'
+	  redirect_to '/gdf80fsd0fs09f8/'
 
 	rescue Stripe::CardError => e
 	  flash[:error] = e.message
