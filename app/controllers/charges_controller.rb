@@ -1,6 +1,7 @@
 class ChargesController < ApplicationController
 	def new
 		# => @charge = Charge.new
+		@user = User.last
 	end
 
 	def create
@@ -25,6 +26,11 @@ class ChargesController < ApplicationController
 	  flash[:error] = e.message
 	  redirect_to charges_path
 	end
+
+	def show
+	    @email = User.last.email
+	end	
+
 end
 
 

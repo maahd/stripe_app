@@ -12,6 +12,10 @@ class UsersController < ApplicationController
     end
   end
 
+  def show
+    @email = User.last.email
+  end
+
   private
 
     def user_params
